@@ -3,219 +3,266 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>杜の湯 こはく | スーパー銭湯リニューアルデザイン</title>
+    <title>真名井の湯 | スーパー銭湯リニューアルデザイン</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <main class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="真名井の湯 ホーム">
+        <span class="brand-mark">湯</span>
+        <span class="brand-text">
+          <small>天然温泉</small>
+          <strong>真名井の湯</strong>
+        </span>
+      </a>
+      <nav class="global-nav" aria-label="グローバルナビゲーション">
+        <a href="#onsen">温泉</a>
+        <a href="#bath">お風呂一覧</a>
+        <a href="#sauna">サウナ</a>
+        <a href="#rest">岩盤浴・休憩</a>
+        <a href="#food">お食事</a>
+        <a href="#access">アクセス</a>
+      </nav>
+      <div class="header-actions">
+        <a href="#line">LINE</a>
+        <a href="#sns">Instagram</a>
+      </div>
+    </header>
+
+    <main id="top">
       <section class="hero" aria-label="メインビジュアル">
-        <img class="hero__image" src="assets/hero-onsen.png" alt="緑に囲まれた露天風呂" />
-        <header class="site-header">
-          <a class="site-brand" href="#">
-            <span>杜の湯</span>
-            <strong>こはく</strong>
-          </a>
-          <nav class="primary-nav" aria-label="主要ナビゲーション">
-            <a href="#onsen">温泉</a>
-            <a href="#sauna">サウナ</a>
-            <a href="#facility">館内</a>
-            <a href="#scene">過ごし方</a>
-            <a href="#access">アクセス</a>
-          </nav>
-        </header>
-
-        <div class="hero__content">
-          <p class="section-label section-label--light">01　メインビジュアル</p>
-          <h1>湯にほどけ、<br />森に深呼吸する。</h1>
-          <p class="hero__lead">
-            日常の熱を静かにほどく、和モダンな湯処。天然温泉、露天風呂、サウナ、
-            食事、休憩まで、ゆるやかに一日を整える場所へ。
+        <img src="assets/provided/main-visual-2.png" alt="夜の露天風呂" />
+        <div class="hero-shade"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Main Visual</p>
+          <h1>日常をほどく、<br />癒しの湯時間。</h1>
+          <p>
+            心とからだを解きほぐす、やすらぎのひとときを。露天風呂の湯気、
+            木質感、和モダンの静けさが、街の中に深いくつろぎをつくります。
           </p>
-          <div class="hero__actions">
-            <a class="button button--light" href="#access">営業時間を見る</a>
-            <a class="button button--ghost" href="#onsen">館内をめぐる</a>
+          <div class="hero-cta">
+            <a class="button button-light" href="#price">料金を見る</a>
+            <a class="button button-glass" href="#access">アクセス</a>
+            <a class="button button-red" href="#line">LINE登録</a>
           </div>
-        </div>
-
-        <div class="hero__note" aria-label="施設の特徴">
-          <span>天然温泉</span>
-          <span>露天風呂</span>
-          <span>ロウリュサウナ</span>
         </div>
       </section>
 
-      <section class="intro-nav" aria-label="施設導線">
-        <div class="intro-nav__inner">
-          <a href="#onsen">温泉</a>
-          <a href="#sauna">サウナ</a>
-          <a href="#facility">食事・休憩</a>
-          <a href="#scene">利用シーン</a>
-          <a href="#access">アクセス</a>
+      <section class="news band" aria-label="イベント・お知らせ">
+        <div class="container news-layout">
+          <div class="section-title">
+            <p>News</p>
+            <h2>イベント・お知らせ</h2>
+          </div>
+          <div class="news-list">
+            <article>
+              <time>2025.05.20</time>
+              <a href="#">季節の湯「ゆず湯」開催のお知らせ</a>
+            </article>
+            <article>
+              <time>2025.05.15</time>
+              <a href="#">サウナイベント開催！6/1（日）開催</a>
+            </article>
+            <article>
+              <time>2025.05.01</time>
+              <a href="#">回数券特別キャンペーン実施中！</a>
+            </article>
+          </div>
         </div>
       </section>
 
-      <section id="onsen" class="section section--warm">
-        <div class="section__inner split split--feature">
-          <div class="image-frame image-frame--portrait">
-            <img src="assets/bath-interior.png" alt="庭を望む内湯" />
+      <section id="onsen" class="section about-section">
+        <div class="container split">
+          <div class="photo-stack">
+            <img class="photo-main" src="assets/provided/carbonated-spring.png" alt="昼の露天風呂" />
+            <img class="photo-sub" src="assets/provided/tsuboyu.png" alt="壺湯" />
           </div>
-          <div class="copy-block">
-            <p class="section-label">02　温泉の魅力</p>
-            <h2>やわらかな湯と、<br />静けさを味わう大浴場。</h2>
+          <div class="copy">
+            <p class="eyebrow">About Manai</p>
+            <h2>清き水の恵みを、<br />心からくつろげる空間へ。</h2>
             <p>
-              天然石と木の温もりを合わせた浴場は、湯面のきらめきまで美しく見えるよう、
-              照明と余白を抑えて設計。朝から夜まで、清潔で落ち着いた湯浴み時間を届けます。
+              「真名井（まない）」とは、清き水が湧き出る場所のこと。
+              私たちは、この地の恵みを大切に、温泉・サウナ・食事・休憩まで
+              一日をゆっくり過ごせる癒しの空間をご提供します。
             </p>
-            <dl class="data-list">
-              <div>
-                <dt>泉質</dt>
-                <dd>低張性弱アルカリ性温泉</dd>
-              </div>
-              <div>
-                <dt>浴槽</dt>
-                <dd>内湯・露天・炭酸泉・水風呂</dd>
-              </div>
-              <div>
-                <dt>おすすめ</dt>
-                <dd>仕事帰りのリセット、休日の半日滞在</dd>
-              </div>
-            </dl>
+            <a class="text-link" href="#bath">詳しく見る</a>
           </div>
         </div>
       </section>
 
-      <section id="sauna" class="section section--green">
-        <div class="section__inner sauna-layout">
-          <div class="copy-block copy-block--light">
-            <p class="section-label section-label--light">03　サウナ・露天風呂紹介</p>
-            <h2>熱、冷、水音。<br />深く整うための余白。</h2>
-            <p>
-              木の香りが広がる高温サウナ、外気浴に心地よい露天スペース、深めの水風呂。
-              ひとりでも友人同士でも過ごしやすい、静かな動線に整えました。
-            </p>
-            <ul class="feature-points">
-              <li>毎時オートロウリュ</li>
-              <li>露天外気浴チェア</li>
-              <li>深水の冷水風呂</li>
-            </ul>
-          </div>
-          <div class="sauna-gallery">
-            <img class="sauna-gallery__main" src="assets/sauna-roten.png" alt="露天風呂に続くサウナ室" />
-            <div class="sauna-gallery__caption">
-              <span>Sauna</span>
-              <strong>静かな熱気と、緑に抜ける外気浴。</strong>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="facility" class="section section--paper">
-        <div class="section__inner">
+      <section id="bath" class="section bath-section">
+        <div class="container">
           <div class="section-heading">
-            <p class="section-label">04　館内施設紹介</p>
-            <h2>湯上がりまで、<br />一日をゆっくり。</h2>
+            <p class="eyebrow">Bath</p>
+            <h2>温泉紹介</h2>
+            <p>高濃度炭酸泉、露天風呂、壺湯を中心に、気分で選べる湯めぐりを。</p>
+          </div>
+          <div class="bath-scroll">
+            <article class="bath-card">
+              <img src="assets/provided/carbonated-spring.png" alt="高濃度炭酸泉" />
+              <div>
+                <span>01</span>
+                <h3>高濃度炭酸泉</h3>
+                <p>細かな泡が肌を包み、ゆっくり温まる人気の湯。長く入りやすいぬるめの設定です。</p>
+              </div>
+            </article>
+            <article class="bath-card">
+              <img src="assets/provided/main-visual-2.png" alt="露天風呂" />
+              <div>
+                <span>02</span>
+                <h3>露天風呂</h3>
+                <p>湯気と灯りが水面にゆらぐ、開放感のある露天。夜の滞在にも映える主役の浴槽です。</p>
+              </div>
+            </article>
+            <article class="bath-card">
+              <img src="assets/provided/tsuboyu.png" alt="壺湯" />
+              <div>
+                <span>03</span>
+                <h3>壺湯</h3>
+                <p>ひとりで静かに湯を味わえる陶器の湯。庭の花と水音が、短い休息を深くします。</p>
+              </div>
+            </article>
+          </div>
+          <a class="button button-dark" href="#">すべてのお風呂を見る</a>
+        </div>
+      </section>
+
+      <section id="sauna" class="section sauna-section">
+        <div class="container sauna-grid">
+          <div class="copy copy-light">
+            <p class="eyebrow">Sauna</p>
+            <h2>本格サウナで、<br />ととのう。</h2>
             <p>
-              休憩、食事、読書、軽い仕事まで。20〜40代が使いやすい清潔感と落ち着きを、
-              余白のある館内構成で表現しています。
+              木の香りとやわらかな灯りに包まれるサウナ室。水風呂、外気浴までの動線を
+              分かりやすくまとめ、初めての方にも常連の方にも心地よい時間を届けます。
             </p>
+            <dl class="sauna-spec">
+              <div><dt>サウナ温度</dt><dd>90℃</dd></div>
+              <div><dt>水風呂温度</dt><dd>15℃</dd></div>
+              <div><dt>オートロウリュ</dt><dd>毎時00分</dd></div>
+              <div><dt>外気浴スペース</dt><dd>あり</dd></div>
+            </dl>
+            <a class="button button-light" href="#">サウナ詳細を見る</a>
           </div>
-          <div class="facility-grid">
-            <article class="facility-card">
-              <img src="assets/lounge-facility.png" alt="畳の休憩ラウンジ" />
-              <div>
-                <span>Rest</span>
-                <h3>湯上がりラウンジ</h3>
-                <p>畳席、半個室、読書スペースをゆるやかに分けた静かな休憩エリア。</p>
-              </div>
-            </article>
-            <article class="facility-card">
-              <img src="assets/dining-meal.png" alt="季節の和定食" />
-              <div>
-                <span>Dining</span>
-                <h3>旬菜食堂</h3>
-                <p>湯上がりに重すぎない和定食と甘味。写真映えよりも整う食事へ。</p>
-              </div>
-            </article>
-            <article class="facility-card">
-              <img src="assets/bath-interior.png" alt="清潔な浴場" />
-              <div>
-                <span>Care</span>
-                <h3>アメニティ・ケア</h3>
-                <p>手ぶら利用しやすい備品と清潔なパウダーエリアを標準で用意。</p>
-              </div>
-            </article>
+          <img src="assets/provided/main-visual-1.png" alt="木の香りがするサウナ室" />
+        </div>
+      </section>
+
+      <section id="rest" class="section tile-section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Relax</p>
+            <h2>岩盤浴・休憩</h2>
+            <p>湯上がりもゆったり過ごせる、休憩とリラックスのためのエリア。</p>
+          </div>
+          <div class="tile-grid">
+            <article><span>岩盤浴</span><strong>4タイプ</strong></article>
+            <article><span>クールルーム</span><strong>温冷交代浴に</strong></article>
+            <article><span>リクライニングルーム</span><strong>仮眠・読書に</strong></article>
+            <article><span>リラックスラウンジ</span><strong>長時間滞在に</strong></article>
           </div>
         </div>
       </section>
 
-      <section id="scene" class="section section--warm scene-section">
-        <div class="section__inner scene-layout">
-          <div class="scene-visual">
-            <img src="assets/lounge-facility.png" alt="休憩ラウンジで過ごすイメージ" />
+      <section id="food" class="section food-section">
+        <div class="container split split-reverse">
+          <div class="copy">
+            <p class="eyebrow">Dining</p>
+            <h2>湯上がりの楽しみを、<br />食事処でも。</h2>
+            <p>
+              季節のおすすめ、定番メニュー、お子様ランチ、ソフトクリーム、カフェドリンクまで。
+              家族でも友人同士でも選びやすい、気軽で上質な食事処です。
+            </p>
+            <a class="text-link" href="#">すべてのメニューを見る</a>
           </div>
-          <div class="copy-block">
-            <p class="section-label">05　過ごし方・利用シーン</p>
-            <h2>予定を詰めず、<br />気分でめぐる半日。</h2>
-            <div class="timeline">
-              <article>
-                <time>15:00</time>
-                <div>
-                  <h3>まずは温泉で深呼吸</h3>
-                  <p>大浴場から露天へ。スマホを置いて、湯と庭の静けさに切り替える。</p>
-                </div>
-              </article>
-              <article>
-                <time>16:30</time>
-                <div>
-                  <h3>サウナと外気浴で整える</h3>
-                  <p>熱・水・休憩を無理なく巡れる動線で、初めての人にも入りやすく。</p>
-                </div>
-              </article>
-              <article>
-                <time>18:00</time>
-                <div>
-                  <h3>食事とラウンジで余韻まで</h3>
-                  <p>和定食、甘味、畳の休憩席。友人との会話も、ひとり時間も自然に。</p>
-                </div>
-              </article>
-            </div>
+          <div class="menu-panel" aria-label="お食事処メニュー">
+            <article><span>季節限定</span><strong>季節のおすすめ</strong></article>
+            <article><span>定番</span><strong>季節メニュー</strong></article>
+            <article><span>Family</span><strong>お子様ランチ</strong></article>
+            <article><span>Cafe</span><strong>ソフトクリーム</strong></article>
+            <article><span>Drink</span><strong>ドリンク・カフェ</strong></article>
           </div>
         </div>
       </section>
 
-      <section id="access" class="section section--access">
-        <div class="section__inner access-layout">
-          <div class="access-image">
-            <img src="assets/access-exterior.png" alt="夕暮れの温浴施設外観" />
+      <section class="section service-section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Service</p>
+            <h2>館内サービス</h2>
           </div>
+          <div class="service-list">
+            <article><span>手ぶらでOK</span><h3>アメニティ充実</h3><p>シャンプー類、ケア用品まで清潔に用意。</p></article>
+            <article><span>レンタル・販売</span><h3>タオルセット</h3><p>急な来館でも身軽に利用できます。</p></article>
+            <article><span>ゆったり</span><h3>館内着</h3><p>休憩エリアでくつろぎやすい館内着。</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section faq-section">
+        <div class="container faq-layout">
+          <div class="section-title">
+            <p>FAQ</p>
+            <h2>よくあるご質問</h2>
+          </div>
+          <div class="faq-list">
+            <details open><summary>タトゥー・刺青があっても入浴できますか？</summary><p>施設規定によりご利用いただけない場合があります。詳細はお問い合わせください。</p></details>
+            <details><summary>再入場はできますか？</summary><p>当日の再入場は受付にてご確認ください。</p></details>
+            <details><summary>クレジットカードは使えますか？</summary><p>主要クレジットカード、電子マネーに対応しています。</p></details>
+          </div>
+        </div>
+      </section>
+
+      <section id="access" class="section access-section">
+        <div class="container access-card">
+          <img src="assets/provided/carbonated-spring.png" alt="施設の露天風呂イメージ" />
           <div class="access-info">
-            <p class="section-label">06　アクセス・営業時間</p>
-            <h2>街から少し離れて、<br />いつもの帰り道に寄れる場所。</h2>
-            <div class="info-table">
-              <div>
-                <span>営業時間</span>
-                <strong>10:00 - 24:00</strong>
-              </div>
-              <div>
-                <span>最終受付</span>
-                <strong>23:15</strong>
-              </div>
-              <div>
-                <span>住所</span>
-                <strong>東京都緑丘市こはく町 2-7-18</strong>
-              </div>
-              <div>
-                <span>アクセス</span>
-                <strong>緑丘駅より無料送迎バス約8分</strong>
-              </div>
-            </div>
-            <div class="access-actions">
-              <a class="button button--dark" href="#">地図を見る</a>
-              <a class="button button--outline" href="#">料金を見る</a>
-            </div>
+            <p class="eyebrow">Access</p>
+            <h2>アクセス</h2>
+            <dl>
+              <div><dt>住所</dt><dd>〒356-0016 埼玉県ふじみ野市大井2丁目20-1</dd></div>
+              <div><dt>TEL</dt><dd>049-261-2641</dd></div>
+              <div><dt>電車・バス</dt><dd>東武東上線「上福岡駅」よりバスで約10分</dd></div>
+              <div><dt>車</dt><dd>無料駐車場250台完備・国道254号線沿い</dd></div>
+            </dl>
+            <a class="button button-dark" href="#">アクセス詳細を見る</a>
           </div>
+        </div>
+      </section>
+
+      <section id="sns" class="sns-section">
+        <div class="container sns-grid">
+          <article id="line">
+            <span>LINE</span>
+            <h2>お得な情報をLINEでお届け</h2>
+          </article>
+          <article>
+            <span>Instagram</span>
+            <h2>最新情報や館内の様子を発信中</h2>
+          </article>
         </div>
       </section>
     </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <a class="brand brand-footer" href="#top">
+          <span class="brand-mark">湯</span>
+          <span class="brand-text"><strong>真名井の湯</strong></span>
+        </a>
+        <nav aria-label="フッターナビゲーション">
+          <a href="#onsen">温泉</a>
+          <a href="#bath">お風呂一覧</a>
+          <a href="#sauna">サウナ</a>
+        </nav>
+      </div>
+    </footer>
+
+    <nav class="mobile-fixed" aria-label="スマホ固定ボタン">
+      <a href="#price">料金</a>
+      <a href="#top">営業</a>
+      <a href="#access">地図</a>
+      <a href="#line">LINE</a>
+    </nav>
   </body>
 </html>
